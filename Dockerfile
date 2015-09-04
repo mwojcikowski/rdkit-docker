@@ -15,5 +15,5 @@ RUN mkdir -p /var/lib/postgresql/data
 
 COPY supervisor/postgresql.conf /etc/supervisor/conf.d/postgresql.conf
 
-CMD ["/usr/bin/supervisord"]
+CMD ["/opt/conda/bin/supervisord"]
 #, "-c", "/etc/supervisor/conf.d/postgresql.conf"]
